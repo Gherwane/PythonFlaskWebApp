@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+     <title>Registration </title>
+     <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection"/>
+     <div>
+        <img class="triangleA" src="https://res.cloudinary.com/procraftstudio/image/upload/v1613965232/triangleA_lwqhnl.png" alt='Onestop triangle'>
+    </div>
+</head>
+
+<body>
+
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Registration Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Last Name" required />
+              </div>
+              <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                  <input type="text" name="name" placeholder="Username" name =" username" />
+                </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" name = "EmailUser" />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder=" Desired Password"  name = password, type = "Password" />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder=" Desired Password"  name = password, type = "Password" />
+          </div>
+            	<div class="input_field radio_option">
+              <input type="radio" name="radiogroup1" id="rd1">
+              <label for="rd1">Male</label>
+              <input type="radio" name="radiogroup1" id="rd2">
+              <label for="rd2">Female</label>
+              </div>
+              <div class="input_field select_option">
+                <select>
+                  <option>Select a country</option>
+                  <option>United States</option>
+                  <option>Others</option>
+                </select>
+                <div class="select_arrow"></div>
+              </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb1">
+    			<label for="cb1">I agree with terms and conditions</label>
+            </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb2">
+    			<label for="cb2">I want to receive the newsletter</label>
+            </div>
+          <input class="button" type="submit" value="Register" />
+          <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+            </small>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<h3>Helpful links!</h3>
+
+<a href="https://www.apta.com">Visit The APTA</a>
+
+<a href="https://world.physio/">Visit The World Physiotherapy</a>
+
+<a href="https://www.nimh.nih.gov/">Visit NIMH</a>
+
+<br>
+
+<a href="/index.html">Index</a>
+
+<a href="/about.html">About</a>
+</body>
+
+</html>

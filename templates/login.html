@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Log In</title> 
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection"/>
+    <div>
+        <img class="triangleA" src="https://res.cloudinary.com/procraftstudio/image/upload/v1613965232/triangleA_lwqhnl.png" alt='Onestop triangle'>
+    </div>
+</head>
+
+<body>
+ 
+<h1>Please Log In</h1>
+    
+<form action="/form-processing-script" method="post">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password">
+      </div>
+      <div class= "form-group">
+        <input type="submit" class="submit" value="Log In">         
+        <button type="button" href="http://127.0.0.1:5000/passwordreset" class="btn btn-primary btn-lg btn-block">Reset Password</button>
+      </div>
+        <div class="border-top pt-6">
+            <small class="text-muted">
+                    Do not Have An Account? <a class="ml-2" href="{{url_for('register') }}">Sign up</a>
+            </small>
+        </div>  
+ </form>
+
+<br>
+
+<h3>Helpful links!</h3>
+
+<a href="https://www.apta.com">Visit The APTA</a>
+
+<a href="https://world.physio/">Visit The World Physiotherapy</a>
+
+<a href="https://www.nimh.nih.gov/">Visit NIMH</a>
+
+<br>
+
+<a href="/index.html">Index</a>
+
+<a href="/about.html">About</a>
+</body>
+
+</html>
